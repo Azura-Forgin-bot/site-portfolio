@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigada! - Júlia Pinheiro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1a2a6c, #243b55);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .thank-you-container {
+            background: white;
+            border-radius: 12px;
+            padding: 3rem;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.5s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .emoji {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: bounce 0.6s ease-out;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: scale(0) rotateZ(-45deg);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1) rotateZ(0deg);
+            }
+        }
+
+        h1 {
+            color: #1a2a6c;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .message {
+            color: #27ae60;
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1a2a6c, #243b55);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(26, 42, 108, 0.3);
+        }
+
+        .btn-secondary {
+            background: #ffd700;
+            color: #1a2a6c;
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(255, 215, 0, 0.3);
+        }
+
+        .countdown {
+            color: #999;
+            font-size: 0.9rem;
+            margin-top: 1.5rem;
+        }
+
+        .countdown strong {
+            color: #1a2a6c;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <div class="emoji">✅</div>
+        <h1>Muito Obrigada!</h1>
+        <p class="subtitle">Sua mensagem foi recebida com sucesso e chegará ao meu email em breve.</p>
+        
+        <div class="message">
+            🎉 Vou responder assim que possível!
+        </div>
+
+        <div class="button-group">
+            <a href="index.html" class="btn btn-primary">← Voltar ao Portfólio</a>
+            <a href="index.html#projetos" class="btn btn-secondary">Ver Projetos →</a>
+        </div>
+
+        <div class="countdown">
+            Redirecionando automaticamente em <strong id="countdown">5</strong> segundos...
+        </div>
+    </div>
+
+    <script>
+        let seconds = 5;
+        const countdownEl = document.getElementById('countdown');
+
+        const timer = setInterval(() => {
+            seconds--;
+            countdownEl.textContent = seconds;
+
+            if (seconds <= 0) {
+                clearInterval(timer);
+                window.location.href = 'index.html';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

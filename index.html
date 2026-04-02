@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Júlia Pinheiro - Programadora Informática & Administradora de Sistemas">
+    <title>Júlia Pinheiro - Portfólio Profissional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Júlia Pinheiro</h1>
+    <p className="subtitle">Programadora Informática | Administradora de Sistemas & Redes</p>
+    <div class="badges">
+        <span class="tag-work">Nu Boyana Portugal</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#sobre">Perfil</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#tecnologias">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="main-layout">
+    <!-- Sticky Sidebar -->
+    <aside class="sidebar" id="profileSidebar">
+        <div class="sidebar-content">
+            <div class="profile-photo">
+                <img id="profileImg" src="https://via.placeholder.com/200?text=Sua+Foto" alt="Foto de Perfil">
+            </div>
+            <div class="profile-info">
+                <h2>Informações de Contato</h2>
+                <div class="contact-icons-row">
+                    <div class="contact-item">
+                        <span class="label">📍</span>
+                        <span id="location" class="value">Lisboa, Portugal</span>
+                    </div>
+                    <a href="mailto:juliafpinh@hotmail.com" class="contact-item">
+                        <span class="label">📧</span>
+                        <span id="contactEmail" class="value">Email</span>
+                    </a>
+                    <a href="tel:+351912345678" class="contact-item">
+                        <span class="label">📱</span>
+                        <span id="phone" class="value">Telefone</span>
+                    </a>
+                    <a href="https://linkedin.com/in/juliafpinh" target="_blank" class="contact-item">
+                        <span class="label">💼</span>
+                        <span id="linkedin" class="value">LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="content">
+        <section id="sobre">
+            <h2><i class="icon">👤</i> Perfil Profissional</h2>
+            <p>Profissional versátil com experiência em <strong>Gestão de Sistemas e Redes</strong> e transição para <strong>Programação</strong>. Atualmente na Nu Boyana Portugal, atuo na manutenção de infraestrutura crítica (Linux/Windows Server), orquestração de containers e suporte especializado.</p>
+        </section>
+
+    <section id="experiencia">
+        <h2><i class="icon">💼</i> Experiência Profissional</h2>
+        
+        <div class="job">
+            <h3>Programadora Informática @ Nu Boyana Portugal</h3>
+            <p class="date">2025 - Presente</p>
+            <ul>
+                <li>Gestão de servidores Linux e Windows Server.</li>
+                <li>Administração de ambientes <strong>Docker e Nodes</strong>.</li>
+                <li>Manutenção de software Open Source e hardware (GPUs/Gráficas).</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Professora de Informática (AEC) @ Associação Semear Talentos & Associação Tempos Brilhantes </h3>
+            <p class="date">2022 - 2024 (2 anos)</p>
+            <p>Ensino de literacia digital e fundamentos tecnológicos para crianças.</p>
+        </div>
+
+        <div class="job">
+            <h3>Cybersecurity Trainee @ Simoldes Plásticos</h3>
+            <p class="date">10/2023 - 01/2024 (3 meses)</p>
+            <p>Prática de campo em Cybersecurity e administração de redes via CESAE.</p>
+        </div>
+    </section>
+
+    <section id="formacao">
+        <h2><i class="icon">🎓</i> Formação Técnica</h2>
+        <ul>
+            <li><strong>Técnico Profissional de Gestão de Redes e Sistemas Informáticos</strong> - CESAE (2025-2026)</li>
+            <li><strong>Reskilling Cybersecurity & Network Administrator</strong> - CESAE (2023-2024)</li>
+            <li><strong>Code Developer</strong> - Galileu (2019)</li>
+        </ul>
+    </section>
+
+    <section id="tecnologias">
+        <h2><i class="icon">🛠️</i> Habilidades</h2>
+        <div class="skills">
+            <span class="tag">Linux</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Windows Server</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">Cybersecurity</span>
+            <span class="tag">Open Source Admin</span>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <h2><i class="icon">📂</i> Projetos</h2>
+        <div class="projects-grid" id="projectsGrid">
+            <div class="project-card">
+                <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <span class="project-placeholder">🖼️</span>
+                </div>
+                <h3>Seu Projeto Aqui</h3>
+                <p>Adicione descrição do seu projeto</p>
+                <div class="project-tags">
+                    <span class="tag-small">Em breve</span>
+                </div>
+            </div>
+        </div>
+        <p class="projects-note">ℹ️ Atualize os cards acima adicionando seus projetos pessoais e profissionais com imagens e descrições.</p>
+    </section>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 - Júlia Pinheiro | Portfólio Profissional</p>
+    <button id="adminBtn" class="admin-btn">⚙️ Admin</button>
+</footer>
+
+<!-- Floating Feedback Tab -->
+<button id="feedbackTabBtn" class="feedback-tab">💬 Feedback</button>
+
+<!-- Feedback Modal -->
+<div id="feedbackModal" class="feedback-modal hidden">
+    <div class="feedback-modal-content">
+        <div class="feedback-modal-header">
+            <h2>Entre em Contato</h2>
+            <button class="close-feedback-btn" id="closeFeedback">&times;</button>
+        </div>
+        <div class="feedback-modal-body">
+            <p>Tem alguma sugestão, proposta de projeto ou apenas quer conversar? Deixe uma mensagem!</p>
+            
+            <form id="feedbackForm" class="feedback-form" action="https://formspree.io/f/xzdkagdj" method="POST">
+                <div class="form-group">
+                    <label for="feedback-name">Nome</label>
+                    <input type="text" id="feedback-name" name="name" required placeholder="Seu nome...">
+                </div>
+                
+                <div class="form-group">
+                    <label for="feedback-email">E-mail</label>
+                    <input type="email" id="feedback-email" name="email" required placeholder="seu@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="feedback-message">Mensagem</label>
+                    <textarea id="feedback-message" name="message" rows="5" required placeholder="Compartilhe sua mensagem..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Login Modal (Separate) -->
+<div id="loginModal" class="admin-modal">
+    <div class="admin-modal-content" style="max-height: 400px;">
+        <div class="admin-modal-header">
+            <h2>Acesso Admin</h2>
+            <button class="close-btn" id="closeLogin">&times;</button>
+        </div>
+        <div id="adminLogin" class="admin-section">
+            <h3>Senha Requerida</h3>
+            <input type="password" id="adminPassword" placeholder="Digite sua senha..." />
+            <button id="loginBtn" class="btn-admin">Entrar</button>
+        </div>
+    </div>
+</div>
+
+<!-- Admin Panel Modal (Only shows after login) -->
+<div id="adminModal" class="admin-modal hidden">
+    <div class="admin-modal-content">
+        <div class="admin-modal-header">
+            <h2>Painel de Admin</h2>
+            <button class="close-btn" id="closeAdmin">&times;</button>
+        </div>
+
+        <!-- Admin Panel (Hidden until login) -->
+        <div id="adminPanel" class="admin-section hidden">
+            <div class="admin-tabs">
+                <button class="tab-btn active" data-tab="profile-tab">Perfil</button>
+                <button class="tab-btn" data-tab="experience-tab">Experiência</button>
+                <button class="tab-btn" data-tab="education-tab">Formação</button>
+                <button class="tab-btn" data-tab="skills-tab">Habilidades</button>
+                <button class="tab-btn" data-tab="projects-tab">Projetos</button>
+                <button class="tab-btn" data-tab="github-tab">GitHub 🔗</button>
+            </div>
+
+            <!-- Profile Tab -->
+            <div id="profile-tab" class="tab-content active">
+                <h3>Editar Informações de Perfil</h3>
+                
+                <div class="form-group">
+                    <label>Foto de Perfil</label>
+                    <div class="profile-upload-area">
+                        <input type="file" id="profilePhotoUpload" accept="image/*" />
+                        <label for="profilePhotoUpload" class="upload-label">
+                            📸 Clique para enviar uma foto
+                        </label>
+                        <small>Formatos aceitos: JPG, PNG, GIF (máx 5MB)</small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>OU URL da Foto de Perfil</label>
+                    <input type="text" id="editProfileImg" placeholder="https://exemplo.com/foto.jpg" />
+                    <small>Alternativa: copie e cole a URL completa da sua foto</small>
+                </div>
+
+                <div class="form-group">
+                    <label>Localização</label>
+                    <input type="text" id="editLocation" placeholder="Lisboa, Portugal" />
+                </div>
+
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" id="editEmail" placeholder="seu@email.com" />
+                </div>
+
+                <div class="form-group">
+                    <label>Telefone</label>
+                    <input type="tel" id="editPhone" placeholder="+351 91 234 5678" />
+                </div>
+
+                <div class="form-group">
+                    <label>LinkedIn</label>
+                    <input type="text" id="editLinkedin" placeholder="https://linkedin.com/in/seu-perfil" />
+                </div>
+
+                <button id="saveProfile" class="btn-admin btn-success">Guardar Alterações</button>
+            </div>
+
+            <!-- Experience Tab -->
+            <div id="experience-tab" class="tab-content hidden">
+                <h3>Editar Experiência Profissional</h3>
+                <div id="experienceList" class="edit-projects-list"></div>
+                <button id="addExperienceBtn" class="btn-admin btn-add">+ Adicionar Experiência</button>
+
+                <div id="experienceForm" class="project-edit-form hidden">
+                    <h4>Nova Experiência</h4>
+                    <div class="form-group">
+                        <label>Cargo</label>
+                        <input type="text" id="experienceTitle" placeholder="ex: Programadora Informática" />
+                    </div>
+                    <div class="form-group">
+                        <label>Empresa</label>
+                        <input type="text" id="experienceCompany" placeholder="ex: Nu Boyana Portugal" />
+                    </div>
+                    <div class="form-group">
+                        <label>Período (ex: Jan 2024 - Presente)</label>
+                        <input type="text" id="experiencePeriod" placeholder="ex: Jan 2024 - Presente" />
+                    </div>
+                    <div class="form-group">
+                        <label>Descrição</label>
+                        <textarea id="experienceDescription" placeholder="Descreva as suas responsabilidades..."></textarea>
+                    </div>
+                    <button id="saveExperienceBtn" class="btn-admin btn-success">Guardar Experiência</button>
+                    <button id="cancelExperienceBtn" class="btn-admin btn-cancel">Cancelar</button>
+                </div>
+            </div>
+
+            <!-- Education Tab -->
+            <div id="education-tab" class="tab-content hidden">
+                <h3>Editar Formação</h3>
+                <div id="educationList" class="edit-projects-list"></div>
+                <button id="addEducationBtn" class="btn-admin btn-add">+ Adicionar Formação</button>
+
+                <div id="educationForm" class="project-edit-form hidden">
+                    <h4>Nova Formação</h4>
+                    <div class="form-group">
+                        <label>Curso/Certificação</label>
+                        <input type="text" id="educationTitle" placeholder="ex: Curso de Python Avançado" />
+                    </div>
+                    <div class="form-group">
+                        <label>Instituição</label>
+                        <input type="text" id="educationInstitution" placeholder="ex: Universidade de Lisboa" />
+                    </div>
+                    <div class="form-group">
+                        <label>Período (ex: 2020 - 2024)</label>
+                        <input type="text" id="educationPeriod" placeholder="ex: 2020 - 2024" />
+                    </div>
+                    <button id="saveEducationBtn" class="btn-admin btn-success">Guardar Formação</button>
+                    <button id="cancelEducationBtn" class="btn-admin btn-cancel">Cancelar</button>
+                </div>
+            </div>
+
+            <!-- Skills Tab -->
+            <div id="skills-tab" class="tab-content hidden">
+                <h3>Editar Habilidades</h3>
+                <div id="skillsList"></div>
+                <button id="addSkillBtn" class="btn-admin btn-add">+ Adicionar Habilidade</button>
+
+                <div id="skillForm" class="project-edit-form hidden">
+                    <h4>Nova Habilidade</h4>
+                    <div class="form-group">
+                        <label>Habilidade</label>
+                        <input type="text" id="skillName" placeholder="ex: Python" />
+                    </div>
+                    <button id="saveSkillBtn" class="btn-admin btn-success">Guardar Habilidade</button>
+                    <button id="cancelSkillBtn" class="btn-admin btn-cancel">Cancelar</button>
+                </div>
+            </div>
+
+            <!-- Projects Tab -->
+            <div id="projects-tab" class="tab-content hidden">
+                <h3>Editar Projetos</h3>
+                <div id="editProjectsList" class="edit-projects-list"></div>
+                <button id="addProjectBtn" class="btn-admin btn-add">+ Adicionar Projeto</button>
+
+                <!-- Project Edit Form (Hidden initially) -->
+                <div id="projectEditForm" class="project-edit-form hidden">
+                    <h4>Novo Projeto</h4>
+                    <div class="form-group">
+                        <label>Título do Projeto</label>
+                        <input type="text" id="projectTitle" placeholder="Nome do projeto" />
+                    </div>
+                    <div class="form-group">
+                        <label>Descrição</label>
+                        <textarea id="projectDescription" placeholder="Descrição do projeto"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Imagem do Projeto</label>
+                        <div class="project-upload-area">
+                            <input type="file" id="projectImageUpload" accept="image/*" />
+                            <label for="projectImageUpload" class="upload-label">
+                                🖼️ Clique para enviar uma imagem
+                            </label>
+                            <small>Formatos aceitos: JPG, PNG, GIF (máx 5MB)</small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>OU URL da Imagem</label>
+                        <input type="text" id="projectImage" placeholder="https://exemplo.com/imagem.jpg" />
+                        <small>Alternativa: copie e cole a URL da imagem</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Tags/Tecnologias (separadas por vírgula)</label>
+                        <input type="text" id="projectTags" placeholder="HTML, CSS, JavaScript" />
+                    </div>
+                    <button id="saveProjectBtn" class="btn-admin btn-success">Guardar Projeto</button>
+                    <button id="cancelProjectBtn" class="btn-admin btn-cancel">Cancelar</button>
+                </div>
+            </div>
+
+            <!-- GitHub Tab -->
+            <div id="github-tab" class="tab-content hidden">
+                <h3>Sincronizar com GitHub</h3>
+                <p class="info-text">⚠️ <strong>Aviso de Segurança:</strong> Guarde o token apenas neste dispositivo. Nunca coloque em código público!</p>
+                
+                <div class="form-group">
+                    <label>Username GitHub</label>
+                    <input type="text" id="githubUsername" placeholder="Azura-Forgin-bot" />
+                    <small>Ex: seu-username</small>
+                </div>
+
+                <div class="form-group">
+                    <label>GitHub Token (Personal Access Token)</label>
+                    <input type="password" id="githubToken" placeholder="ghp_..." />
+                    <small>Token é guardado localmente. Nunca é enviado para servidores.</small>
+                </div>
+
+                <div class="form-group">
+                    <label>Repositório</label>
+                    <input type="text" id="repoName" placeholder="SitePortifolio" value="SitePortifolio" />
+                    <small>Nome do repositório GitHub</small>
+                </div>
+
+                <button id="saveGithubCredentials" class="btn-admin btn-success">Guardar Credenciais</button>
+                <button id="syncGithubBtn" class="btn-admin btn-success" style="margin-top: 1rem; background: #10B981;">🔄 Sincronizar Agora</button>
+                <div id="syncStatus" class="sync-status hidden"></div>
+            </div>
+
+            <button id="logoutBtn" class="btn-admin btn-logout">Sair</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
